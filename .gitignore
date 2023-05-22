@@ -1,7 +1,9 @@
-project/
+!project/
 
-!grandhyatt.html
+project/*
 
-!merryplanet.html
+!project/detail/grandhyatt.html
+
+!project/detail/merryplanet.html
 
 !project/detail/portfolio.html
