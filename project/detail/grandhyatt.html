@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10, user-scalable=yes">
+        <title>웹 퍼블리셔 포트폴리오｜정지나</title>
+        <link href="/img/favicon.ico" rel="shortcut icon">
+        <link href="/css/font.css" rel="stylesheet">
+        <link href="/css/reset.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/56dd584cb7.js" crossorigin="anonymous"></script>
+        <style>
+            header {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class="inner">
+                    <div class="logo">
+                        <a href="/portfolio.html">
+                            <img src="/img/logo.svg" alt="로고">
+                        </a>
+                    </div>
+                    <button type="button" class="close_btn" onclick="window.close()"></button>
+                </div>
+            </header>
+            <main>
+                <section class="project-detail">
+                    <div class="top">
+                        <div class="tit">
+                            <span class="eng">- Personal</span>
+                            <h2>GRAND HYATT</h2>
+                        </div>
+                        <div class="btnWrap">
+                            <a href="https://jeong-jina.github.io/GrandHyatt/" class="btn" target="_blank">
+                                <span class="eng">MAIN</span>
+                            </a>
+                            <a href="https://jeong-jina.github.io/GrandHyatt/sub/attractions.html" class="btn" target="_blank">
+                                <span class="eng">SUB1</span>
+                            </a>
+                            <a href="https://jeong-jina.github.io/GrandHyatt/sub/wedding.html" class="btn" target="_blank">
+                                <span class="eng">SUB2</span>
+                            </a>
+                            <a href="https://jeong-jina.github.io/GrandHyatt/sub/inquiries.html" class="btn" target="_blank">
+                                <span class="eng">SUB3</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="detail_image">
+                            <img src="/img/grandhyatt.jpg" alt="그랜드하얏트">
+                        </div>
+                        <div class="detail_txt">
+                            <ul class="tag">
+                                <li>#리디자인</li>
+                                <li>#반응형</li>
+                                <li>#HTML5·CSS3·JQuery</li>
+                                <li>#flatpickr.js</li>
+                                <li>#slick.js</li>
+                            </ul>
+                            <p class="description">
+                                그랜드하얏트 사이트를 리디자인했습니다.
+                                호텔 특유의 이미지를 고려하여 현대적이면서 고급스러운 분위기를 나타내고자 남색 계열의 메인 색상을 선정했습니다.
+                                타호텔 사이트와 비교하여 트렌드에 벗어나는 웹 디자인과 단조로운 기존 사이트를 개선하기 위해 다양한 레이아웃 디자인과 이벤트를 추가하는 것에 초점을 두었습니다.<br>
+                                메인 페이지는 flatpickr 플러그인과 select 태그를 이용해 체크인 기능을 구현하고,
+                                슬라이더를 이용한 스페셜오퍼와 객실 섹션, 탭메뉴 기능을 이용한 다이닝 섹션, 클릭 이벤트를 이용한 부대시설 섹션, 아이콘을 추가한 리워즈 섹션으로 구성했습니다.<br>
+                                서브 페이지의 '주변 즐길거리' 페이지는 attr() 메서드로 data-name 값을 불러와 카테고리에 맞는 장소들을 보기 쉽게 필터링하도록 했습니다.
+                                '이용문의' 페이지는 input 태그를 이용하여 폼을 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div class="quick_wrap">
+                <ul>
+                    <li>
+                        <button type="button" class="git-btn" aria-label="깃허브" onclick="window.open('https://github.com/JEONG-JINA');">
+                            <i class="fa-brands fa-github"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="scroll-top-btn">TOP</button>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+                <p class="copyright">© 2023 jina Jeong. All Rights Reserved.</p>
+            </footer>
+        </div>
+        <script src="/js/script.js"></script>
+    </body>
+</html>
