@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style: none;
+    word-break: keep-all;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span,
+img,
+video {
+    display: block;
+}
+
+button {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 0;
+}
+
+select option {
+    color: #222;
+}

@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/font/Pretendard/Pretendard-Thin.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/font/Pretendard/Pretendard-ExtraLight.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/font/Pretendard/Pretendard-Light.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/Pretendard/Pretendard-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/font/Pretendard/Pretendard-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/font/Pretendard/Pretendard-SemiBold.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/font/Pretendard/Pretendard-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/font/Pretendard/Pretendard-ExtraBold.woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/font/Pretendard/Pretendard-Black.woff2');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/font/Prompt/Prompt-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/font/Prompt/Prompt-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/font/Prompt/Prompt-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/Prompt/Prompt-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/font/Prompt/Prompt-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/font/Prompt/Prompt-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/font/Prompt/Prompt-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/font/Prompt/Prompt-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/font/Prompt/Prompt-Black.ttf');
+}
