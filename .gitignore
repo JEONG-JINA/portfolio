@@ -1,7 +1,5 @@
 project/*
 
-!project/detail/
-
 !project/detail/grandhyatt.html
 
 !project/detail/merryplanet.html
