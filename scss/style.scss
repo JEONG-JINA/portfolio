@@ -33,7 +33,7 @@ body {font-size: 1.6rem; font-family: 'Pretendard';}
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
 }
 
 @mixin list_before {
@@ -741,7 +741,7 @@ main {
         padding: 5rem 0;
 
         .tag {
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             @include flex;
 
             > li {
@@ -774,6 +774,7 @@ main {
                 margin-top: 1rem;
                 font-weight: 400;
                 font-size: 1.6rem;
+                line-height: 1.5;
             }
         }
     }
@@ -1084,6 +1085,16 @@ footer {
     }
 
 
+    /** skill **/
+    .section_skill .content .tool_wrap {
+        gap: 8px;
+
+        li {
+            padding: 8px 15px;
+        }
+    }
+
+
     /** project-detail **/
     .project-detail .top .tit {
         span {
@@ -1093,6 +1104,14 @@ footer {
 
         h2 {
             font-size: 5rem;
+        }
+    }
+
+    .project-detail .content .detail_txt .tag {
+        gap: 8px;
+
+        li {
+            padding: 8px 15px;
         }
     }
 }
@@ -1138,11 +1157,6 @@ footer {
 @media screen and (max-width: 580px) {
     .mo {display: block;}
 
-    .section_skill .content .tool_wrap > li,
-    .project-detail .content .detail_txt .tag > li {
-        padding: 8px 15px;
-    }
-
 
     /** intro **/
     #intro .title {
@@ -1173,7 +1187,7 @@ footer {
 
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     html {font-size: 52.5%;}
 
 
@@ -1216,6 +1230,12 @@ footer {
     .section_project .content > ul .pjBox .image,
     .project-list .content > ul .pjBox .image {
         height: 46vw;
+    }
+
+
+    /** project-detail **/
+    .project-detail .content .detail_txt .info {
+        font-size: 1.7rem;
     }
 
 

@@ -379,7 +379,7 @@ main .title h2.eng {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   gap: 0;
 }
 .section_about .content .about_image {
@@ -413,7 +413,7 @@ main .title h2.eng {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 .section_about .content .about_desc .contact .btn {
   padding: 10px 20px;
@@ -478,7 +478,7 @@ main .title h2.eng {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   gap: 0;
 }
 .section_skill .title {
@@ -527,7 +527,7 @@ main .title h2.eng {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 4rem;
 }
 .section_skill .content .tool_wrap > li {
@@ -671,7 +671,7 @@ main .title h2.eng {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -806,7 +806,7 @@ main .title h2.eng {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 .project-detail .top .btnWrap .btn {
   width: 15rem;
@@ -846,7 +846,7 @@ main .title h2.eng {
   padding: 5rem 0;
 }
 .project-detail .content .detail_txt .tag {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,7 +855,7 @@ main .title h2.eng {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 .project-detail .content .detail_txt .tag > li {
   padding: 10px 20px;
@@ -885,6 +885,7 @@ main .title h2.eng {
   margin-top: 1rem;
   font-weight: 400;
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 /** 퀵메뉴 **/
@@ -1141,6 +1142,13 @@ footer .copyright {
     width: 75%;
     height: 60vw;
   }
+  /** skill **/
+  .section_skill .content .tool_wrap {
+    gap: 8px;
+  }
+  .section_skill .content .tool_wrap li {
+    padding: 8px 15px;
+  }
   /** project-detail **/
   .project-detail .top .tit span {
     font-size: 2.2rem;
@@ -1148,6 +1156,12 @@ footer .copyright {
   }
   .project-detail .top .tit h2 {
     font-size: 5rem;
+  }
+  .project-detail .content .detail_txt .tag {
+    gap: 8px;
+  }
+  .project-detail .content .detail_txt .tag li {
+    padding: 8px 15px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -1177,10 +1191,6 @@ footer .copyright {
   .mo {
     display: block;
   }
-  .section_skill .content .tool_wrap > li,
-  .project-detail .content .detail_txt .tag > li {
-    padding: 8px 15px;
-  }
   /** intro **/
   #intro .title .fadeTxt {
     font-size: 3rem;
@@ -1200,7 +1210,7 @@ footer .copyright {
     width: 100%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   html {
     font-size: 52.5%;
   }
@@ -1232,6 +1242,10 @@ footer .copyright {
   .section_project .content > ul .pjBox .image,
   .project-list .content > ul .pjBox .image {
     height: 46vw;
+  }
+  /** project-detail **/
+  .project-detail .content .detail_txt .info {
+    font-size: 1.7rem;
   }
   /** 퀵메뉴 **/
   .quick_wrap li button {
