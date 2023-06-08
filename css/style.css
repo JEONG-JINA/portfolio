@@ -947,7 +947,7 @@ footer .copyright {
 }
 
 /** hover **/
-@media screen and (min-width: 1024.1px) {
+@media screen and (min-width: 1024px) {
   .btn:hover {
     background-color: transparent;
     color: #2b2b2b;
@@ -1246,6 +1246,10 @@ footer .copyright {
   }
   #intro .title h2 {
     font-size: 3.5rem;
+  }
+  /** about **/
+  .section_about {
+    padding-top: 30vh;
   }
   /** project **/
   .section_project .title {

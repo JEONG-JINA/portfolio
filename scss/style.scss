@@ -845,7 +845,7 @@ footer {
 
 
 /** hover **/
-@media screen and (min-width: 1024.1px) {
+@media screen and (min-width: 1024px) {
     .btn:hover {
         background-color: transparent;
         color: $dark;
@@ -1223,6 +1223,12 @@ footer {
         h2 {
             font-size: 3.5rem;
         }
+    }
+
+
+    /** about **/
+    .section_about {
+        padding-top: 30vh;
     }
 
 
