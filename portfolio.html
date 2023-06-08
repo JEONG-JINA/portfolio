@@ -16,7 +16,7 @@
     <link href="/plugin/aos/aos.css" rel="stylesheet">
     <script src="/plugin/aos/aos.js"></script>
 </head>
-<body>
+<body class="main">
     <div id="wrapper">
         <header class="fd">
             <div class="inner">
@@ -27,31 +27,31 @@
                 </h1>
             </div>
         </header>
-        <div id="intro">
-            <strong class="hdTxt eng">Web Publisher Portfolio</strong>
-            <div class="title">
-                <div class="fadeTxt eng">
-                    <span>H</span>
-                    <span>E</span>
-                    <span>L</span>
-                    <span>L</span>
-                    <span>O</span>
-                    <span><i>!</i></span>
-                </div>
-                <h2>
-                    I'm <span class="effectTxt">jina Jeong</span>🪐<br>
-                    I do <span class="effectTxt">web publishing.</span>
-                </h2>
-            </div>
-            <div class="scroll">
-                <span>SCROLL</span>
-                <div class="motion"></div>
-            </div>
-        </div>
         <main id="contents">
-            <section class="section_about">
+            <section id="intro" class="section active" data-bgcolor="#242424">
+                <strong class="hdTxt eng">Web Publisher Portfolio</strong>
                 <div class="title">
-                    <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-offset="800">
+                    <div class="fadeTxt eng">
+                        <span>H</span>
+                        <span>E</span>
+                        <span>L</span>
+                        <span>L</span>
+                        <span>O</span>
+                        <span><i>!</i></span>
+                    </div>
+                    <h2>
+                        I'm <span class="effectTxt">jina Jeong</span>🪐<br>
+                        I do <span class="effectTxt">web publishing.</span>
+                    </h2>
+                </div>
+                <div class="scroll">
+                    <span>SCROLL</span>
+                    <div class="motion"></div>
+                </div>
+            </section>
+            <section class="section section_about" data-bgcolor="#fbfbfd">
+                <div class="title">
+                    <h2 data-aos="fade-left" data-aos-duration="2000">
                         안녕하세요!<br>
                         <span class="emoji">👋</span>정지나입니다
                     </h2>
@@ -96,9 +96,9 @@
                     </div>
                 </div>
             </section>
-            <section class="section_skill">
+            <section class="section section_skill" data-bgcolor="#fbfbfd">
                 <div class="title">
-                    <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-offset="800">
+                    <h2 data-aos="fade-right" data-aos-duration="2000">
                         이런 일을<span class="emoji">💻</span><br>
                         할 수 있어요!
                     </h2>
@@ -127,7 +127,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="project-list">
+            <section class="section project-list" data-bgcolor="#fbfbfd">
                 <div class="title">
                     <h2 class="eng">PROJECT</h2>
                 </div>
@@ -142,7 +142,7 @@
                         <button type="button" class="eng" data-name="work">Work</button>
                     </li>
                 </ul>
-                <div class="content" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="500">
+                <div class="content" data-aos="fade-up" data-aos-duration="2000">
                     <ul>
                         <li class="pjBox personal">
                             <a href="/project/detail/grandhyatt.html" target="_blank">

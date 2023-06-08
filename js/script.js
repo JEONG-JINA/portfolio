@@ -1,15 +1,7 @@
 $(function(){
-    var win_h = $(window).innerHeight();
-    
-    function scrollLoad() {
-        $('#contents').css({'margin-top': (win_h + 150)+'px'});
-    }
-
-    scrollLoad();
-
-
     //scroll
     $(window).scroll(function(){
+        var win_h = $(window).innerHeight();
         var scr_top = $(window).scrollTop();
 
         if(scr_top > win_h) {
@@ -77,3 +69,38 @@ $(function(){
         });
     }
 });
+
+
+//메인 백그라운드 효과
+const sections = document.querySelectorAll('.section');
+
+let config = {
+    rootMargin: '0px',
+    threshold: 0
+};
+  
+let observer = new IntersectionObserver((entries) => {
+    //console.log(entries);
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            intersectionHandler(entry);
+        } 
+    });
+}, config);
+  
+sections.forEach(section => {
+    observer.observe(section);
+});
+  
+function intersectionHandler(entry) {
+    const current = document.querySelector('.section.active');
+    const next = entry.target;
+  
+    if(current) {
+        current.classList.remove('active');
+    }
+    if(next) {
+        next.classList.add('active');
+        document.body.style.setProperty("--intro-bg-color", next.dataset.bgcolor);
+    }
+}
