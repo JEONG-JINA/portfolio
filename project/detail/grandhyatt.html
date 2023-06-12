@@ -9,27 +9,12 @@
     <link href="/css/font.css" rel="stylesheet">
     <link href="/css/reset.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/56dd584cb7.js" crossorigin="anonymous"></script>
-    <style>
-        header {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <div class="inner">
-                <h1 class="logo">
-                    <a href="/portfolio.html">
-                        <img src="/img/logo.svg" alt="웹 퍼블리셔 포트폴리오｜정지나">
-                    </a>
-                </h1>
-                <button type="button" class="close_btn" onclick="window.close()"></button>
-            </div>
-        </header>
+        <header class="component" data-include="/components/header.html"></header>
         <main>
             <section class="project-detail">
                 <div class="top">
@@ -69,31 +54,20 @@
                             호텔 특유의 이미지를 고려하여 현대적이면서 고급스러운 분위기를 나타내고자 남색 계열의 메인 색상을 선정했습니다.
                             타호텔 사이트와 비교하여 트렌드에 벗어나는 웹 디자인과 단조로운 기존 사이트를 개선하기 위해 다양한 레이아웃 디자인과 이벤트를 추가하는 것에 초점을 두었습니다.<br>
                             메인 페이지의 예약 섹션은 flatpickr 플러그인과 select 태그를 이용해 체크인 기능을 구현하고,
-                            slick을 이용한 메인 비주얼과 스페셜오퍼, 객실 섹션, 탭메뉴로 구현한 다이닝 섹션, 클릭 이벤트를 이용한 부대시설 섹션, 아이콘을 추가한 리워즈 섹션으로 구성했습니다.<br>
+                            slick을 이용한 메인 비주얼과 스페셜 오퍼, 객실 섹션, 탭메뉴로 구현한 다이닝 섹션, 클릭 이벤트를 이용한 부대시설 섹션, 아이콘을 추가한 리워즈 섹션으로 구성했습니다.<br>
                             서브 페이지의 '주변 즐길거리' 페이지는 getAttribute 메서드로 data-name 값을 불러와 카테고리에 맞는 장소들을 보기 쉽게 필터링하도록 했습니다.
                             '이용문의' 페이지는 input 태그를 이용하여 폼을 만들었습니다.<br>
+                            유지보수를 위해 header, footer 등 중복되는 코드는 fetch 함수로 외부 컴포넌트 파일을 include하는 방식으로 작업했습니다.
                             자바스크립트 공부를 하며 진행한 프로젝트로, 자바스크립트와 제이쿼리를 이용했습니다.
                         </p>
                     </div>
                 </div>
             </section>
         </main>
-        <aside class="quick_wrap">
-            <ul>
-                <li>
-                    <button type="button" class="git-btn" aria-label="깃허브" onclick="window.open('https://github.com/JEONG-JINA');">
-                        <i class="fa-brands fa-github"></i>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="scroll-top-btn">TOP</button>
-                </li>
-            </ul>
-        </aside>
-        <footer>
-            <p class="copyright">© 2023 jina Jeong. All Rights Reserved.</p>
-        </footer>
+        <aside class="quick_wrap component" data-include="/components/quickMenu.html"></aside>
+        <footer class="component" data-include="/components/footer.html"></footer>
     </div>
     <script src="/js/script.js"></script>
+    <script src="/js/components.js"></script>
 </body>
 </html>

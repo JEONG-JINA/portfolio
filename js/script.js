@@ -1,74 +1,58 @@
-$(function(){
-    //scroll
-    $(window).scroll(function(){
-        var win_h = $(window).innerHeight();
-        var scr_top = $(window).scrollTop();
-
-        if(scr_top > win_h) {
-            $("header.fd").stop().fadeIn(300);
-            side_quick();
-        }else {
-            $("header.fd").stop().fadeOut(300);
-            $(".quick_wrap").stop().fadeOut(300);
-        }
-    });
+const win_w = window.outerWidth;
+const win_h = window.innerHeight;
 
 
-    //resize
-    var win_w = $(window).outerWidth();
-
-    if (win_w <= 1024) {
-        _mobile();
-    }else {
-        _pc();
-    }
-
-    $(window).resize(function(){
-        var win_w = $(window).outerWidth();
-
-        if (win_w <= 1024) {
-            _mobile();
-        }else {
-            _pc();
-        }
-    });
-
-    function _mobile() {
-        $(".section_about .title").insertBefore(".section_about .content .about_desc .career");
-        $(".section_about .contact").insertAfter(".section_about .content .about_desc .certificate");
-    }
-
-    function _pc() {
-        $(".section_about .title").insertBefore(".section_about .content");
-        $(".section_about .contact").insertBefore(".section_about .content .about_desc .career");
-    }
+//메인 헤더
+window.addEventListener('scroll', function() {
+    var scr_top = window.scrollY || document.documentElement.scrollTop;
+    const fadeHeader = document.querySelector('header.fd');
     
-
-    //intro
-    $("#intro .title .fadeTxt").addClass("active");
-
-
-    //project-list
-    $(".project-list .tab-btn button").click(function(){
-        $(this).parent().addClass("on");
-        $(this).parent().siblings().removeClass("on");
-
-        var dataName = $(this).attr("data-name");
-        $(".project-list .pjBox").stop().hide();
-        $(".project-list ." + dataName).stop().show();
-    });
-
-
-    //퀵메뉴
-    function side_quick() {
-        $(".quick_wrap").stop().fadeIn(300);
-        
-        //탑버튼
-        $(".scroll-top-btn").click(function(){
-            $("html").stop().animate({scrollTop: 0}, 1000);
-        });
+    if (scr_top > win_h) {
+        fadeHeader.style.display = 'block';
+    } else {
+        fadeHeader.style.display = 'none';
     }
 });
+
+
+//반응형
+const about = document.querySelector('.section_about');
+const abtTit = about.querySelector('.title');
+const abtContent = about.querySelector('.content')
+const contact = abtContent.querySelector('.contact');
+const career = abtContent.querySelector('.career');
+const certificate = abtContent.querySelector('.certificate');
+
+function resize() {
+    const win_w = window.outerWidth;
+
+    if (win_w <= 1023) {
+        _mobile();
+    } else {
+        _pc();
+    }
+}
+resize();
+
+function _mobile() {
+    career.parentNode.insertBefore(abtTit, career); //부모 노드.insertBefore(삽입할 노드, 기준 노드)
+    certificate.parentNode.insertBefore(contact, null); //맨 끝에 삽입
+}
+
+function _pc() {
+    abtContent.parentNode.insertBefore(abtTit, abtContent);
+    career.parentNode.insertBefore(contact, career);
+}
+
+window.addEventListener('resize', function() {
+    resize();
+});
+
+
+//intro
+const introTit = document.querySelector('#intro .title .fadeTxt');
+
+introTit.classList.add('active');
 
 
 //메인 백그라운드 효과
@@ -104,3 +88,28 @@ function intersectionHandler(entry) {
         document.body.style.setProperty("--intro-bg-color", next.dataset.bgcolor);
     }
 }
+
+
+//project-list
+const projectList = document.querySelector('.project-list');
+const projectTab =  projectList.querySelectorAll('.tab-btn li');
+const projectTabBtn =  projectList.querySelectorAll('.tab-btn li button');
+const projectBox = projectList.querySelectorAll('.pjBox');
+
+projectTabBtn.forEach(function(item, index) {
+    item.addEventListener('click', function() {
+        const dataName = item.getAttribute('data-name');
+
+        projectTab.forEach(function(tabItem, tabIndex) {
+            tabItem.classList.toggle('on', tabIndex === index);
+        });
+
+        projectBox.forEach(function(pjItem) {
+            pjItem.style.display = 'none';
+        });
+
+        projectList.querySelectorAll('.pjBox.' + dataName).forEach(function(dataItem) {
+            dataItem.style.display = 'block';
+        });
+    });
+});

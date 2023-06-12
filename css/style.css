@@ -1025,7 +1025,7 @@ footer .copyright {
     font-size: 8.5rem;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   /** main **/
   main > section .title {
     padding: 0 !important;
@@ -1042,12 +1042,12 @@ footer .copyright {
   /** skill **/
   /** project **/
 }
-@media screen and (max-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   .section_about .content .about_image {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .section_about .content .about_desc {
     width: 60%;
     margin: 0 auto;
@@ -1055,12 +1055,12 @@ footer .copyright {
     padding: 0;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   .section_about .content .about_desc {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .section_about .content .about_desc .contact {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1071,7 +1071,7 @@ footer .copyright {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .section_skill {
     display: block;
   }
@@ -1079,25 +1079,25 @@ footer .copyright {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .section_skill .content {
     width: 60%;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   .section_skill .content {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .section_skill .content .tool_wrap {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .section_project .content > ul .pjBox {
     height: auto;
     border-radius: 0;

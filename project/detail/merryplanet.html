@@ -9,27 +9,12 @@
     <link href="/css/font.css" rel="stylesheet">
     <link href="/css/reset.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/56dd584cb7.js" crossorigin="anonymous"></script>
-    <style>
-        header {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <div class="inner">
-                <h1 class="logo">
-                    <a href="/portfolio.html">
-                        <img src="/img/logo.svg" alt="웹 퍼블리셔 포트폴리오｜정지나">
-                    </a>
-                </h1>
-                <button type="button" class="close_btn" onclick="window.close()"></button>
-            </div>
-        </header>
+        <header class="component" data-include="/components/header.html"></header>
         <main>
             <section class="project-detail">
                 <div class="top">
@@ -67,22 +52,10 @@
                 </div>
             </section>
         </main>
-        <aside class="quick_wrap">
-            <ul>
-                <li>
-                    <button type="button" class="git-btn" aria-label="깃허브" onclick="window.open('https://github.com/JEONG-JINA');">
-                        <i class="fa-brands fa-github"></i>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="scroll-top-btn">TOP</button>
-                </li>
-            </ul>
-        </aside>
-        <footer>
-            <p class="copyright">© 2023 jina Jeong. All Rights Reserved.</p>
-        </footer>
+        <aside class="quick_wrap component" data-include="/components/quickMenu.html"></aside>
+        <footer class="component" data-include="/components/footer.html"></footer>
     </div>
     <script src="/js/script.js"></script>
+    <script src="/js/components.js"></script>
 </body>
 </html>
