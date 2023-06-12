@@ -1,18 +1,18 @@
-const component = document.querySelectorAll('.component');
+const components = document.querySelectorAll('.component');
 
-component.forEach(function(el) {
+components.forEach(function(el) {
     const include = el.getAttribute('data-include');
 
     fetch(include)
     .then(res => res.text())
     .then(data => {
         el.innerHTML = data;
-        componentsJs();
+        getScript();
     });
 });
 
 
-function componentsJs() {
+function getScript() {
     //퀵메뉴
     window.addEventListener('scroll', function() {
         var scr_top = window.scrollY || document.documentElement.scrollTop;
