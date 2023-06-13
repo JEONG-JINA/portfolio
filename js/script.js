@@ -2,6 +2,12 @@ const win_w = window.outerWidth;
 const win_h = window.innerHeight;
 
 
+//intro
+const introTit = document.querySelector('#intro .title .fadeTxt');
+
+introTit.classList.add('active');
+
+
 //메인 헤더
 window.addEventListener('scroll', function() {
     var scr_top = window.scrollY || document.documentElement.scrollTop;
@@ -12,6 +18,31 @@ window.addEventListener('scroll', function() {
     } else {
         fadeHeader.style.display = 'none';
     }
+});
+
+
+//project-list
+const projectList = document.querySelector('.project-list');
+const projectTab =  projectList.querySelectorAll('.tab-btn li');
+const projectTabBtn =  projectList.querySelectorAll('.tab-btn li button');
+const projectBox = projectList.querySelectorAll('.pjBox');
+
+projectTabBtn.forEach(function(item, index) {
+    item.addEventListener('click', function() {
+        const dataName = item.getAttribute('data-name');
+
+        projectTab.forEach(function(tabItem, tabIndex) {
+            tabItem.classList.toggle('on', tabIndex === index);
+        });
+
+        projectBox.forEach(function(pjItem) {
+            pjItem.style.display = 'none';
+        });
+
+        projectList.querySelectorAll('.pjBox.' + dataName).forEach(function(dataItem) {
+            dataItem.style.display = 'block';
+        });
+    });
 });
 
 
@@ -49,12 +80,6 @@ window.addEventListener('resize', function() {
 });
 
 
-//intro
-const introTit = document.querySelector('#intro .title .fadeTxt');
-
-introTit.classList.add('active');
-
-
 //메인 백그라운드 효과
 const sections = document.querySelectorAll('.section');
 
@@ -88,28 +113,3 @@ function intersectionHandler(entry) {
         document.body.style.setProperty("--intro-bg-color", next.dataset.bgcolor);
     }
 }
-
-
-//project-list
-const projectList = document.querySelector('.project-list');
-const projectTab =  projectList.querySelectorAll('.tab-btn li');
-const projectTabBtn =  projectList.querySelectorAll('.tab-btn li button');
-const projectBox = projectList.querySelectorAll('.pjBox');
-
-projectTabBtn.forEach(function(item, index) {
-    item.addEventListener('click', function() {
-        const dataName = item.getAttribute('data-name');
-
-        projectTab.forEach(function(tabItem, tabIndex) {
-            tabItem.classList.toggle('on', tabIndex === index);
-        });
-
-        projectBox.forEach(function(pjItem) {
-            pjItem.style.display = 'none';
-        });
-
-        projectList.querySelectorAll('.pjBox.' + dataName).forEach(function(dataItem) {
-            dataItem.style.display = 'block';
-        });
-    });
-});
