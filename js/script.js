@@ -3,9 +3,10 @@ const win_h = window.innerHeight;
 
 
 //intro
-const introTit = document.querySelector('#intro .title .fadeTxt');
-
-introTit.classList.add('active');
+window.addEventListener('DOMContentLoaded', function() {
+    const introTit = document.querySelector('#intro .title .fadeTxt');
+    introTit.classList.add('active');
+});
 
 
 //메인 헤더
