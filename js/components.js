@@ -21,7 +21,7 @@ function getScript() {
             quickMenu();
         } else {
             const quickWrap = document.querySelector('.quick_wrap');
-            quickWrap.style.display = 'none';
+            quickWrap.classList.remove('on');
         }
     });
 
@@ -29,7 +29,7 @@ function getScript() {
         const quickWrap = document.querySelector('.quick_wrap');
         const scrTopBtn = document.querySelector('.scroll-top-btn');
 
-        quickWrap.style.display = 'block';
+        quickWrap.classList.add('on');
 
         scrTopBtn.addEventListener('click', function() {
             function scrollToTop() {

@@ -15,9 +15,9 @@ window.addEventListener('scroll', function() {
     const fadeHeader = document.querySelector('header.fd');
     
     if (scr_top > win_h) {
-        fadeHeader.style.display = 'block';
+        fadeHeader.classList.add('on');
     } else {
-        fadeHeader.style.display = 'none';
+        fadeHeader.classList.remove('on');
     }
 });
 
