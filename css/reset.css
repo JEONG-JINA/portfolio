@@ -30,6 +30,13 @@ select {
     border-radius: 0;
 }
 
+textarea {
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
 select option {
     color: #222;
 }
